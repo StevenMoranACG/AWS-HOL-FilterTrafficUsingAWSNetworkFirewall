@@ -4,3 +4,5 @@ TCP         iPerf-Client Public IP      Any             iPerf-Server Private IP 
 TCP         iPerf-Client Public IP      Any             iPerf-Server Private IP     5004            Drop
 TCP         iPerf-Client Public IP      Any             iPerf-Server Private IP     5005            Alert
 TCP         iPerf-Client Public IP      Any             iPerf-Server Private IP     5006            Reject
+
+Note that there is no rule to match port 5007!

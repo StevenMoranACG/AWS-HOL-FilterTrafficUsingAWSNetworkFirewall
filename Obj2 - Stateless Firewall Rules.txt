@@ -1,4 +1,4 @@
-Objective 2 Stateless Firewall Rules
+Objective 2: Stateless Firewall Rules
 
 Priority    Protocol    Source                      Source Port     Destination                 Dest. Port      Action
 1           All         10.1.0.0/16                 Any             10.1.0.0/16                 Any             Pass
@@ -6,3 +6,5 @@ Priority    Protocol    Source                      Source Port     Destination 
 3           TCP         iPerf-Client Public IP      Any             iPerf-Server Private IP     5002            Drop
 4           TCP         iPerf-Client Public IP      Any             iPerf-Server Private IP     5003-5007       Forward to stateful rule groups
 5           TCP         iPerf-SERVER Private IP     Any             iPerf-CLIENT Public IP      Any             Pass
+
+Note that there is no rule to match port 5008!
